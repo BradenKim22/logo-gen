@@ -1,9 +1,9 @@
-// Runs the application using imports from lib/
+// Runs the application using imports from lib/ and npm
 const inquirer = require("inquirer");
 const { join } = require("path");
 const { writeFile } = require("fs").promises;
 const { Circle, Square, Triangle } = require("./lib/shapes");
-// Max Length Input
+// Max Length Input (npm installed it)
 const MaxLengthInputPrompt = require("inquirer-maxlength-input-prompt");
 inquirer.registerPrompt("maxLen-input", MaxLengthInputPrompt);
 
@@ -47,9 +47,9 @@ function promptUser() {
       }
     })
     .then((newLogo) => {
-      writeFile(join(__dirname, "/examples/assets", `${newLogo.shape}.svg`), newLogo.createLogo());
+      writeFile(join(__dirname, "/examples", `${newLogo.shape}.svg`), newLogo.createLogo());
     })
-    .then(() => console.log("Created logo.svg"))
+    .then(() => console.log(`SVG File Created!`))
     .catch((err) => {
       console.log(err);
       console.log("Something went wrong!");

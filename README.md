@@ -41,7 +41,7 @@ To use this application you must run node index.js in the integrated terminal. T
 N/A
 
 ## Walkthrough Video
-Follow the link <Link>
+Follow the link https://drive.google.com/file/d/1KhtAyYC2l3XZd7SZN1T3hIqc6s6iqaNh/view
 
 ## License
 Refer to [MIT](https://opensource.org/licenses/MIT) License.
